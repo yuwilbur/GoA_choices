@@ -84,15 +84,15 @@ public class Week2 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // TODO: Replace next level. Call success function IF correct and fail function IF not correct (use if else)
                 if (option.equals(answer)) {
-                    // TODO: Replace next level. Call success function when it's correct and fail function when it's not
                     nextLevel();
                 }
             }
         });
     }
 
-    // TODO: Create functions success and fail.
+    // TODO: Create 2 functions: private void success and private void fail. Both don't have parameters.
     // TODO (success): We want to increment the score and show it, then go to next level
     // TODO (fail): We want to go to the next level without incrementing the score
 }

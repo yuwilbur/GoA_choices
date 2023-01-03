@@ -64,7 +64,7 @@ public class Week4 extends AppCompatActivity {
         });
         running = true;
         setLevel(1);
-        // TODO: Restart the ArrayList
+        // TODO: Empty out the ArrayList
     }
 
     private void setLevel(int level) {
@@ -101,6 +101,7 @@ public class Week4 extends AppCompatActivity {
             option4 = "99%";
         }
         else {
+            running = false;
             question = "Result: \n";
             /**
              * TODO: Use a for-loop to go through the results and tell the user which questions were right or wrong
@@ -111,7 +112,6 @@ public class Week4 extends AppCompatActivity {
              *   Question 3: Correct
              *   Question 4: Correct
              */
-            running = false;
         }
         setQuestion(question, option1, option2, option3, option4, answer);
     }

@@ -33,7 +33,7 @@ public class Week1 extends AppCompatActivity {
     }
 
     private void setLevel(int level) {
-        // TODO: Set the member variable level to the local variable level
+        // TODO: Set the member variable level (this.level) with the local variable level (level)'s value
         // TODO: Set the levelView to show the current level
 
         String question = "";
@@ -45,25 +45,25 @@ public class Week1 extends AppCompatActivity {
         if (level == 0) {
             question = "Press any options to START";
         } else if (level == 1) {
-            // TODO: Complete level 1 (option1, option2, option4)
             question = "1 + 1 = ";
             answer = "2";
+            // TODO: option1?
+            option2 = "1";
             option3 = answer;
+            // TODO: option4?
         } else if (level == 2) {
             // TODO: Create level 2
         }
-        // TODO (Optional): Create more levels!
 
-        // TODO: Call setQuestion with local variables above
-        setQuestion(question, option1, option2, option3, option4, answer);
+        // TODO: Call setQuestion with local variables above (example: setQuestion(question, ???);)
     }
 
     private void nextLevel() {
-        // TODO: Increment the level and set the level
+        // TODO: Call setLevel with the current level + 1
     }
 
     private void setQuestion(String question, String option1, String option2, String option3, String option4, String answer) {
-        // TODO: set the questionView with the question text
+        // TODO: set the questionView with using .setText(String text);
 
         setupButton(button1, option1, answer);
         // TODO: Finish setting up buttons 2, 3 and 4
@@ -74,7 +74,7 @@ public class Week1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: call nextLevel() if this button is the answer!
+                // TODO: call nextLevel() if this option is the answer! Remember to use .equals()
             }
         });
     }

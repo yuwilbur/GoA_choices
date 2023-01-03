@@ -35,24 +35,28 @@ public class Week3 extends AppCompatActivity {
         button3 = this.findViewById(R.id.button3);
         button4 = this.findViewById(R.id.button4);
         // TODO: Connect buttonMain variable with R.id.buttonMain
+        // TODO: set the buttonMain to have text "Start" (use .setText)
+        buttonMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO call stop() if we're running
+                // TODO call start() if we're NOT running
+            }
+        });
         // TODO: Replace setLevel(0) with stop()
         setLevel(0);
     }
 
     private void stop() {
-        // TODO: set the buttonMain to show "Start"
-        buttonMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // TODO: Set its onClick to call start()
-            }
-        });
-        // TODO: Set running to false, set score to 0 and set level to very beginning
+        // TODO: set buttonMain's text to "Start"
+        // TODO: Set running to false
+        // TODO: Set score to 0 and reset level to 0
     }
 
     private void start() {
-        // TODO: set the buttonMain to show "Stop", and set its onClick to call stop()
-        // TODO: Set running to true, and set level to the first level
+        // TODO: set buttonMain's text to "Stop"
+        // TODO: Set running to true
+        // TODO: Set level to the first level
     }
 
     private void setLevel(int level) {
@@ -87,7 +91,7 @@ public class Week3 extends AppCompatActivity {
             option2 = "81%";
             option3 = answer;
             option4 = "99%";
-        } // TODO: Add an else to handle when we've reach the very end and set running to false
+        }
         setQuestion(question, option1, option2, option3, option4, answer);
     }
 
